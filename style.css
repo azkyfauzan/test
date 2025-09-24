@@ -1,31 +1,84 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  display: flex;
-  justify-content: center;
-  padding: 50px;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #87ceeb, #b0e0e6);
+}
+
+.header {
+  background: #cccf2a;
+  color: #3b54c4;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+  padding: 20px;
 }
 
 .container {
-  background-color: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  text-align: center;
+  display: flex;
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  border: 3px solid #bfbfc0;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.profil-box img {
-  border-radius: 50%;
+.sidebar {
+  background: #f0e6ff;
   width: 150px;
-  height: 150px;
-  object-fit: cover;
+  padding: 10px;
 }
 
-h2 {
-  margin: 15px 0 5px;
+.sidebar h3 {
+  background: #2c0875;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 0 10px 0;
+  font-size: 12px;
 }
 
-p {
-  margin: 8px 0;
+.sidebar a {
+  display: block;
+  padding: 8px 10px;
+  background: #8a31ef;
+  color: #4b0082;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.sidebar a:hover {
+  background: #9370db;
+  color: white;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.content h2 {
+  color: #4b0082;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.footer {
+  background: #8a2be2;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+}
+
+#gambar-profil {
+  position: absolute;
+  top: 0px;
+  left: 120px;
+  border-radius: 50%;
+  border: 2px solid #4b0082;
 }
